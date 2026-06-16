@@ -1,0 +1,208 @@
+[
+  {
+    "id": "chainalytix",
+    "title": "ChainAlytix Visibility Portal",
+    "category": "Systems Analysis & Supply Chain Technology",
+    "summary": "Designed a supply chain visibility portal concept focused on shipment tracking, delivery confirmation, exception monitoring, and operational transparency.",
+    "image": "/images/projects/chainalytix/class-diagram.png",
+    "featured": true,
+
+    "problem": "Supply chain teams often struggle with fragmented shipment visibility, incomplete delivery confirmation, and delayed exception awareness.",
+
+    "solution": "Designed a supply chain visibility portal concept that supports shipment submission, delivery confirmation, exception monitoring, audit tracking, and operational visibility.",
+
+    "deliverables": [
+      "Class Model",
+      "Activity Diagram",
+      "Sequence Diagram",
+      "State Transition Diagram",
+      "Controller-Orchestrated Design"
+    ],
+
+    "technologies": [
+      "Systems Analysis",
+      "UML",
+      "Object-Oriented Design",
+      "Business Process Modeling",
+      "Supply Chain Visibility"
+    ],
+
+    "value": "Demonstrates the ability to translate operational challenges into a structured system architecture and detailed design solution.",
+
+    "gallery": [
+      {
+        "src": "/images/projects/chainalytix/class-diagram.png",
+        "caption": "Class model illustrating the major domain objects, services, controllers, and system architecture."
+      },
+      {
+        "src": "/images/projects/chainalytix/activity-diagram.png",
+        "caption": "Activity diagram showing the shipment and delivery workflow process."
+      },
+      {
+        "src": "/images/projects/chainalytix/sequence-diagram.png",
+        "caption": "Sequence diagram illustrating interactions between controllers, services, and domain objects."
+      },
+      {
+        "src": "/images/projects/chainalytix/state-diagram.png",
+        "caption": "State transition diagram showing shipment lifecycle progression and business rules."
+      }
+    ]
+  },
+
+  {
+    "id": "chillys-storefront",
+    "title": "Chilly's React Storefront",
+    "category": "React Web Application",
+    "summary": "Built a React storefront with product browsing, product detail pages, shopping cart functionality, JSON-based product data, and responsive design.",
+    "image": "/images/projects/chillys/homepage.jpeg",
+    "featured": true,
+
+    "problem": "Small businesses need a responsive online storefront that allows customers to browse inventory, view detailed product information, and manage selected items.",
+
+    "solution": "Developed a React-based storefront application featuring reusable components, routing, shopping cart functionality, and responsive layouts.",
+
+    "deliverables": [
+      "Homepage Product Catalog",
+      "Product Detail Pages",
+      "Shopping Cart",
+      "Join Form",
+      "Responsive Design"
+    ],
+
+    "technologies": [
+      "React",
+      "React Router",
+      "JavaScript",
+      "CSS Grid",
+      "Flexbox",
+      "JSON"
+    ],
+
+    "value": "Demonstrates front-end development skills including routing, state management concepts, responsive design, and component-based architecture.",
+
+    "gallery": [
+      {
+        "src": "/images/projects/chillys/homepage.jpeg",
+        "caption": "Storefront homepage featuring product catalog and best sellers section."
+      },
+      {
+        "src": "/images/projects/chillys/product-detail.jpeg",
+        "caption": "Dynamic product detail page displaying product information and purchase options."
+      },
+      {
+        "src": "/images/projects/chillys/shopping-cart.jpeg",
+        "caption": "Shopping cart functionality allowing users to review and manage selected items."
+      },
+      {
+        "src": "/images/projects/chillys/join-form.png",
+        "caption": "Customer registration form demonstrating form handling and user interaction."
+      }
+    ]
+  },
+
+  {
+    "id": "mypfa-database",
+    "title": "MyPFA Database",
+    "category": "Database Design & SQL Development",
+    "summary": "Designed and implemented a SQL Server database to manage bills, payment sources, schedules, categories, alerts, and financial reporting.",
+    "image": "/images/projects/mypfa/erd.jpeg",
+    "featured": true,
+
+    "problem": "Financial obligations can become difficult to manage when bills, payment schedules, alerts, and payment methods are spread across disconnected systems.",
+
+    "solution": "Designed a normalized SQL Server database capable of managing financial obligations, payment schedules, alerts, reporting, and payment source tracking.",
+
+    "deliverables": [
+      "Entity Relationship Diagram",
+      "Normalized Database Design",
+      "Stored Procedures",
+      "SQL Joins",
+      "Reporting Views"
+    ],
+
+    "technologies": [
+      "SQL Server",
+      "Database Design",
+      "ERD Modeling",
+      "Stored Procedures",
+      "Views",
+      "Normalization"
+    ],
+
+    "value": "Demonstrates database architecture, SQL development, relational modeling, and reporting capabilities.",
+
+    "gallery": [
+      {
+        "src": "/images/projects/mypfa/erd.jpeg",
+        "caption": "Entity relationship diagram showing the complete financial management database design."
+      },
+      {
+        "src": "/images/projects/mypfa/join-query.png",
+        "caption": "SQL join query demonstrating retrieval of related data across multiple tables."
+      },
+      {
+        "src": "/images/projects/mypfa/stored-procedure.png",
+        "caption": "Stored procedure execution demonstrating automated database operations."
+      },
+      {
+        "src": "/images/projects/mypfa/spending-view.png",
+        "caption": "Reporting view used to summarize and analyze monthly spending activity."
+      }
+    ]
+  },
+
+  {
+    "id": "expense-tracker",
+    "title": "Python Expense Tracker",
+    "category": "Python Application Development",
+    "summary": "Developed a menu-driven Python application for tracking expenses, generating reports, filtering data, and managing backups.",
+    "image": "/images/projects/expense-tracker/title-slide.png",
+    "featured": true,
+
+    "problem": "Users need a practical way to record, organize, filter, summarize, and preserve personal expense information.",
+
+    "solution": "Built a Python application featuring expense entry, category filtering, reporting, data persistence, backup functionality, and recovery capabilities.",
+
+    "deliverables": [
+      "Menu-Driven Interface",
+      "Expense Entry Workflow",
+      "Category Filtering",
+      "Monthly Reporting",
+      "Backup and Restore"
+    ],
+
+    "technologies": [
+      "Python",
+      "Object-Oriented Programming",
+      "File Handling",
+      "Data Structures",
+      "Validation",
+      "Control Flow"
+    ],
+
+    "value": "Demonstrates practical software development, user interaction, data management, and problem-solving skills.",
+
+    "gallery": [
+      {
+        "src": "/images/projects/expense-tracker/title-slide.png",
+        "caption": "Project overview and introduction to the Expense Tracker application."
+      },
+      {
+        "src": "/images/projects/expense-tracker/menu.png",
+        "caption": "Menu-driven interface providing access to application functionality."
+      },
+      {
+        "src": "/images/projects/expense-tracker/expense-entry.png",
+        "caption": "Expense entry workflow showing successful transaction creation."
+      },
+      {
+        "src": "/images/projects/expense-tracker/monthly-summary.png",
+        "caption": "Monthly spending summary demonstrating reporting functionality."
+      },
+      {
+        "src": "/images/projects/expense-tracker/category-filter.png",
+        "caption": "Category filter report displaying filtered expense data."
+      }
+    ]
+  }
+]
