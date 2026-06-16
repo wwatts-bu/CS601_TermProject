@@ -86,7 +86,7 @@ function Contact() {
 
           <div className="contact-links">
             <a
-              href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+              href="https://www.linkedin.com/in/willie-watts/"
               target="_blank"
               rel="noreferrer"
             >
@@ -94,14 +94,14 @@ function Contact() {
             </a>
 
             <a
-              href="https://github.com/YOUR-GITHUB"
+              href="https://github.com/wwatts-bu"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
             </a>
 
-            <a href="mailto:willcwatts79@gmail.com">Email</a>
+            <a href="mailto:will79watts@gmail.com">Email</a>
           </div>
         </div>
 
