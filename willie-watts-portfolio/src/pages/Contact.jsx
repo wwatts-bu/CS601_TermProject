@@ -9,6 +9,7 @@ function Contact() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   function validateForm() {
     const newErrors = {};
@@ -44,9 +45,14 @@ function Contact() {
     });
 
     setSubmitted(false);
+    setSubmitError("");
   }
 
-  function handleSubmit(event) {
+  function encode(data) {
+    return new URLSearchParams(data).toString();
+  }
+
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const validationErrors = validateForm();
@@ -56,15 +62,34 @@ function Contact() {
       return;
     }
 
-    setSubmitted(true);
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: encode({
+          "form-name": "contact",
+          subject: "New portfolio message from Willie Watts Portfolio",
+          ...formData
+        })
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+      setSubmitted(true);
 
-    setErrors({});
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
+
+      setErrors({});
+      setSubmitError("");
+    } catch (error) {
+      setSubmitError(
+        "Something went wrong. Please try again or contact me by email."
+      );
+    }
   }
 
   return (
@@ -85,23 +110,25 @@ function Contact() {
           <h2>Professional Profiles</h2>
 
           <div className="contact-links">
+            <a href="mailto:willcwatts79@gmail.com">
+              willcwatts79@gmail.com
+            </a>
+
             <a
-              href="https://www.linkedin.com/in/willie-watts/"
+              href="https://www.linkedin.com/in/willie-watts-cpim/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              LinkedIn
+              LinkedIn Profile
             </a>
 
             <a
               href="https://github.com/wwatts-bu"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              GitHub
+              GitHub Portfolio
             </a>
-
-            <a href="mailto:will79watts@gmail.com">Email</a>
           </div>
         </div>
 
@@ -114,7 +141,27 @@ function Contact() {
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="contact-form" noValidate>
+          {submitError && (
+            <div className="error-box">
+              {submitError}
+            </div>
+          )}
+
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+            className="contact-form"
+            noValidate
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input
+              type="hidden"
+              name="subject"
+              value="New portfolio message from Willie Watts Portfolio"
+            />
+
             <label htmlFor="name">Name</label>
             <input
               id="name"

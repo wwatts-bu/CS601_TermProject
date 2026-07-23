@@ -1017,6 +1017,15 @@ a {
   font-size: 0.9rem;
 }
 
+.error-box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.14);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
 @media (max-width: 650px) {
   .hero-section,
   .expertise-section,
