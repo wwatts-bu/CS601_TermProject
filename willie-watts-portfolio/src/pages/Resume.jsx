@@ -34,6 +34,10 @@ function Resume() {
             <span>SQL</span>
             <span>React</span>
             <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
             <span>CSS Grid/Flexbox</span>
             <span>Power BI</span>
             <span>ERP Systems</span>
